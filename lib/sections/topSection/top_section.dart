@@ -45,15 +45,3 @@ class TopSection extends StatelessWidget {
   }
 }
 
-// short = [
-// {
-//   email : 'example@gmail.com',
-//   name : 'Aleam',
-//   Desc : '',
-// },
-// {
-//   email : 'example@gmail.com',
-//   name : 'Aleam',
-//   Desc : '',
-// },
-// ]
