@@ -13,7 +13,7 @@ class FeedbackSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(vertical: kDefaultPadding * 2.5),
-      constraints: BoxConstraints(maxWidth: 1110),
+      constraints: BoxConstraints(maxWidth: 1200),
       child: Column(
         children: [
           SectionTitle(

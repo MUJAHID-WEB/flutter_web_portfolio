@@ -30,8 +30,8 @@ class TopSection extends StatelessWidget {
           children: [
             LogoAndBlurBox(size: size),
             Positioned(
-              bottom: 0,
-              right: 0,
+              bottom: 100,
+              right: 70,
               child: PersonPic(),
             ),
             Positioned(

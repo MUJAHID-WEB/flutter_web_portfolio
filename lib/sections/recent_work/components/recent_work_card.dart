@@ -28,7 +28,7 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
       },
       child: AnimatedContainer(
         duration: Duration(milliseconds: 200),
-        height: 320,
+        height: 220,
         width: 540,
         decoration: BoxDecoration(
           color: Colors.white,
@@ -37,7 +37,7 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
         ),
         child: Row(
           children: [
-            Image.asset(recentWorks[widget.index].image),
+            Image.asset(recentWorks[widget.index].image, width: 200, height: 400,),
             Expanded(
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
@@ -45,15 +45,17 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(recentWorks[widget.index].category.toUpperCase()),
+                    Text(recentWorks[widget.index].title.toUpperCase()),
                     SizedBox(height: kDefaultPadding / 2),
-                    Text(
-                      recentWorks[widget.index].title,
-                      style: Theme.of(context)
-                          .textTheme
-                          .headlineSmall!
-                          .copyWith(height: 1.5),
-                    ),
+
+                    Text(recentWorks[widget.index].category),
+                    // Text(
+                    //   recentWorks[widget.index].title,
+                    //   style: Theme.of(context)
+                    //       .textTheme
+                    //       .headlineSmall!
+                    //       .copyWith(height: 1.5),
+                    // ),
                     SizedBox(height: kDefaultPadding),
                     Text(
                       "View Details",

@@ -9,6 +9,8 @@ import 'sections/service/service_section.dart';
 import 'sections/topSection/top_section.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

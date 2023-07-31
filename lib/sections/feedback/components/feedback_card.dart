@@ -34,46 +34,48 @@ class _FeedbackCardState extends State<FeedbackCard> {
         duration: duration,
         margin: EdgeInsets.only(top: kDefaultPadding * 3),
         padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-        height: 350,
+        height: 200,
         width: 350,
         decoration: BoxDecoration(
           color: feedbacks[widget.index].color,
           borderRadius: BorderRadius.circular(10),
           boxShadow: [if (isHover) kDefaultCardShadow],
+          
         ),
         child: Column(
           children: [
             Transform.translate(
-              offset: Offset(0, -55),
+              offset: Offset(0, 0),
               child: AnimatedContainer(
                 duration: duration,
-                height: 100,
-                width: 100,
+                height: 200,
+                width: 350,
                 decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(color: Colors.white, width: 10),
+                  //shape: BoxShape.circle,
+                  //border: Border.all(color: Colors.white, width: 10),
                   boxShadow: [if (!isHover) kDefaultCardShadow],
                   image: DecorationImage(
+                    fit: BoxFit.contain,
                     image: AssetImage(feedbacks[widget.index].userPic),
                   ),
                 ),
               ),
             ),
-            Text(
-              feedbacks[widget.index].review,
-              style: TextStyle(
-                color: kTextColor,
-                fontSize: 18,
-                fontWeight: FontWeight.w300,
-                fontStyle: FontStyle.italic,
-                height: 1.5,
-              ),
-            ),
-            SizedBox(height: kDefaultPadding * 2),
-            Text(
-              "Ronald Thompson",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            )
+            // Text(
+            //   feedbacks[widget.index].review,
+            //   style: TextStyle(
+            //     color: kTextColor,
+            //     fontSize: 18,
+            //     fontWeight: FontWeight.w300,
+            //     fontStyle: FontStyle.italic,
+            //     height: 1.5,
+            //   ),
+            // ),
+            // SizedBox(height: kDefaultPadding * 2),
+            // Text(
+            //   "Ronald Thompson",
+            //   style: TextStyle(fontWeight: FontWeight.bold),
+            // )
           ],
         ),
       ),

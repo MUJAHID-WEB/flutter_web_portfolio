@@ -56,24 +56,24 @@ class ContactBox extends StatelessWidget {
       child: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               SocalCard(
                 color: Color(0xFFD9FFFC),
-                iconSrc: "assets/images/skype.png",
-                name: 'TheFlutterWay',
+                iconSrc: "assets/images/gmail.png",
+                name: 'mujahid30390@gmail.com',
                 press: () {},
               ),
-              SocalCard(
-                color: Color(0xFFE4FFC7),
-                iconSrc: "assets/images/whatsapp.png",
-                name: 'TheFlutterWay',
-                press: () {},
-              ),
+              // SocalCard(
+              //   color: Color(0xFFE4FFC7),
+              //   iconSrc: "assets/images/linkedin.png",
+              //   name: 'https://www.linkedin.com/in/md-mujahidul-islam/',
+              //   press: () {},
+              // ),
               SocalCard(
                 color: Color(0xFFE8F0F9),
-                iconSrc: "assets/images/messanger.png",
-                name: 'TheFlutterWay',
+                iconSrc: "assets/images/call.png",
+                name: '+880 1551 609 974',
                 press: () {},
               ),
             ],
