@@ -11,7 +11,7 @@ final Size size;
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.vertical(top:Radius.circular(10)),
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
         child: Container(
@@ -19,7 +19,14 @@ final Size size;
           constraints:
               BoxConstraints(maxWidth: 1110, maxHeight: size.height * 0.7),
           width: double.infinity,
-          color: Colors.white.withOpacity(0),
+          //color: Colors.white.withOpacity(0),
+          decoration: BoxDecoration(
+                  
+                  image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage('assets/images/cover.png'),
+                  ),
+                ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import '../../constants.dart';
 import 'components/logo_blur_box.dart';
 import 'components/menu.dart';
-import 'components/person_pic.dart';
+//import 'components/person_pic.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({super.key});
@@ -29,11 +29,11 @@ class TopSection extends StatelessWidget {
         child: Stack(
           children: [
             LogoAndBlurBox(size: size),
-            Positioned(
-              bottom: 100,
-              right: 70,
-              child: PersonPic(),
-            ),
+            // Positioned(
+            //   bottom: 100,
+            //   right: 70,
+            //   child: PersonPic(),
+            // ),
             Positioned(
               bottom: 0,
               child: Menu(),
